@@ -1,7 +1,8 @@
 .search-bar {
-  width: 500px;
+  width: 80%;
+  height: 100%;
+}
+
+.input-form {
   height: 50px;
-  ::placeholder {
-    color: black;
-  }
 }

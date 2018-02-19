@@ -1,6 +1,14 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+}
+
 .card {
   height: 15em;
   width: 10em;
-  background-color: grey;
-  
+  background-color: #00BFFF;
+  color: #eee;
+  text-align: center;
 }
