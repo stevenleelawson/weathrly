@@ -1,0 +1,26 @@
+.current-weather {
+  width: 100%;
+  height: 20em;
+}
+
+.weather {
+  width: 30em;
+  height: 100%;
+  margin: 2em auto;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.days {
+  font-size: 3em;
+  text-align: center;
+  color: black;
+}
+
+.current-forcast {
+  font-size: 2em;
+}
+
+.current-temp {
+  font-size: 2em;
+}

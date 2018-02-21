@@ -2,13 +2,9 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  // background-color: chartreuse;
 }
 body {
-  // background-color: chartreuse;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url('./lib/assets/sunny.jpg') no-repeat center center fixed;
+  background: url('./lib/assets/sunny2.jpg');
+  // background: url('./lib/assets/sunny.jpg') no-repeat center center fixed;
   background-size: cover;
 }
