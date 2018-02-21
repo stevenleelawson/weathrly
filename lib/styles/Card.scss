@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10em;
+  margin-top: 2em;
 }
 
 .card {
   height: 15em;
   width: 10em;
-  background-color: #00BFFF;
-  color: #eee;
+  background: rgba(255, 255, 255, 0.5);
   text-align: center;
+  color: black;
 }
