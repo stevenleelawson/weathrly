@@ -4,7 +4,7 @@
   margin: 0;
 }
 body {
-  background: url('./lib/assets/sunny2.jpg');
+  background: url('./lib/assets/sunny2.jpg') no-repeat center center fixed;
   // background: url('./lib/assets/sunny.jpg') no-repeat center center fixed;
   background-size: cover;
 }
