@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 @import url('https://fonts.googleapis.com/css?family=Cardo:400i');
 
-.card-container {
+.hour-card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -11,8 +11,8 @@
   display: inline-block;
 }
 
-.card {
-  height: 12em;
+.hour-card {
+  height: 8em;
   width: 10em;
   background: rgba(255, 255, 255, 0.7);
   text-align: center;
@@ -23,7 +23,7 @@
 }
 
 
-.card-condition {
+.hour-card-condition {
   font-family: 'Cardo', serif;
   font-weight: lighter;
   font-size: 1.3em;
