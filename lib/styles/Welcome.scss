@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Bellefair');
+
+$component: rgba(255, 255, 255, 0.7);
+
 .welcome-screen {
+  margin: 8em auto;
   text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  height: 40em;
+  width: 40em;
+  background-color: $component;
+  box-shadow: 8px 8px 6px -6px black;
 }
 
 h1 {
   font-size: 8em;
+}
+
+.weathrly {
+  font-family: 'Bellefair', serif;
+  font-size: 8em;
+  color: #66BFD8;
 }
