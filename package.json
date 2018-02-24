@@ -58,6 +58,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "@stevenleelawson/complete-me": "git+https://github.com/stevenleelawson/complete-me.git",
     "moment": "^2.20.1"
   }
 }
