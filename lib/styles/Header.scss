@@ -2,8 +2,19 @@
   background: rgba(220, 220, 220, 0.8);
   text-align: center;
   height: 8em;
+  width: 100vw;
 }
 
 .city-location {
   font-size: 4em;
+}
+
+@media only screen and (max-width: 400px) {
+  .city-location {
+    font-size: 3em;
+  }
+
+  .header {
+    height: 6em;
+  }
 }
