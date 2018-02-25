@@ -19,14 +19,14 @@ describe( 'SevenHour', () => {
     expect(wrapper).toBeDefined();
   });
 
-  it('should return seven cards', () => {    
+  it('should return seven cards', () => {
   expect(wrapper.find('HourCard').length).toEqual(7)
   })
 
-  // it('should pass the correct number of props for each hour', () => {
-  //   console.log(Object.keys(wrapper.find('HourCard')))
-  //   // console.log('sevenhouraray',wrapper.props().weather.sevenHourArray.slice(0,7))
-  // expect(wrapper.props().weather.sevenHourArray).toEqual(4)
+  it('should display the correct temperature for each hour', () => {
+    expect(wrapper.props('HourCard').weather.temperature).toEqual(46)
+    // console.log('sevenhouraray',wrapper.props().weather.sevenHourArray.slice(0,7))
+    // expect(wrapper.props().weather.Object.keys(sevenHourArray[0])).toEqual(4)
 
-  // })
+  })
 })

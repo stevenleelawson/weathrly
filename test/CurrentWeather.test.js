@@ -24,4 +24,39 @@ describe( 'CurrentWeather', () => {
     expect(wrapper.find('img').length).toEqual(1);
     expect(wrapper.find('p').length).toEqual(4);
   })
+
+  it('should display the correct temperature for each hour', () => {
+    expect(wrapper.props('CurrentWeather').weather.temperature).toEqual(46);
+  })
+
+  it('should display the correct location as props passed down', () => {
+    expect(wrapper.props('CurrentWeather').weather.location).toEqual('Louisville, KY');
+  })
+
+  it('should display the correct weather as props passed down', () => {
+    expect(wrapper.props('CurrentWeather').weather.weather).toEqual('Mostly Cloudy');
+  })
+
+  it('should display the correct day as props passed down', () => {
+    expect(wrapper.props('CurrentWeather').weather.day).toEqual('Wednesday');
+  })
+
+  it('should display the correct date as props passed down', () => {
+    expect(wrapper.props('CurrentWeather').weather.date).toEqual('December 20th 2017');
+  })
+
+  it('should display the correct img as props passed down', () => {
+    expect(wrapper.props('CurrentWeather').weather.icon).toEqual('http://icons.wxug.com/i/c/k/mostlycloudy.gif');
+    console.log(wrapper.props('CurrentWeather'))
+  })
+
+  it('should display the correct low temp as props passed down', () => {
+    expect(wrapper.props('CurrentWeather').weather.low).toEqual('32');
+    console.log(wrapper.props('CurrentWeather'))
+  })
+
+  it('should display the correct high temp as props passed down', () => {
+    expect(wrapper.props('CurrentWeather').weather.high).toEqual('51');
+    console.log(wrapper.props('CurrentWeather'))
+  })
 })
