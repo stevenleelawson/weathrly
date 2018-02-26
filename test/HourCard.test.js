@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import HourCard from '../lib/HourCard';
-import data from '../lib/mock.js';
-import { DataCleaner } from '../lib/DataCleaner';
+import data from '../lib/mockData/mock.js';
+import { dataCleaner } from '../lib/dataCleaner';
 
 describe( 'HourCard', () => {
   let wrapper;
@@ -12,7 +12,7 @@ describe( 'HourCard', () => {
   }
 
   beforeEach(() => {
-    wrapper = mount(<HourCard weather={DataCleaner(data)}/>);
+    wrapper = mount(<HourCard weather={dataCleaner(data)}/>);
   });
 
   it('should exist', () => {

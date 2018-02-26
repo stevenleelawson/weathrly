@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import SevenHour from '../lib/SevenHour';
-import data from '../lib/mock.js';
-import { DataCleaner } from '../lib/DataCleaner';
+import data from '../lib/mockData/mock.js';
+import { dataCleaner } from '../lib/dataCleaner';
 
 describe( 'SevenHour', () => {
   let wrapper;
@@ -12,7 +12,7 @@ describe( 'SevenHour', () => {
   }
 
   beforeEach(() => {
-    wrapper = mount(<SevenHour weather={DataCleaner(data)}/>);
+    wrapper = mount(<SevenHour weather={dataCleaner(data)}/>);
   });
 
   it('should exist', () => {

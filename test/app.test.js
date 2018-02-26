@@ -7,7 +7,7 @@ describe( 'App', () => {
 
   beforeEach(() => {
     wrapper = shallow(<App />);
-    // localStorage.clear();
+    localStorage.clear();
   });
 
   it('should exist', () => {
@@ -76,10 +76,6 @@ describe( 'App', () => {
   })
 
   
-
-
-
-
 })
 
 
