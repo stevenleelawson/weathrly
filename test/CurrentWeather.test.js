@@ -47,16 +47,13 @@ describe( 'CurrentWeather', () => {
 
   it('should display the correct img as props passed down', () => {
     expect(wrapper.props('CurrentWeather').weather.icon).toEqual('http://icons.wxug.com/i/c/k/mostlycloudy.gif');
-    console.log(wrapper.props('CurrentWeather'))
   })
 
   it('should display the correct low temp as props passed down', () => {
     expect(wrapper.props('CurrentWeather').weather.low).toEqual('32');
-    console.log(wrapper.props('CurrentWeather'))
   })
 
   it('should display the correct high temp as props passed down', () => {
     expect(wrapper.props('CurrentWeather').weather.high).toEqual('51');
-    console.log(wrapper.props('CurrentWeather'))
   })
 })
