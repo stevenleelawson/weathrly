@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400|Montserrat:700');
+
 .search-bar {
   width: 80%;
   height: 35px;
@@ -18,4 +20,16 @@
 
 button:hover {
   background-color: #66BFD8;
+}
+
+.error {
+  font-family: 'Cardo', serif;
+}
+
+.warnIcon {
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+  padding: 4px;
+  margin-bottom: 4px;
 }

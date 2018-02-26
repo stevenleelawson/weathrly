@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bellefair');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 $component: rgba(255, 255, 255, 0.7);
 
@@ -22,7 +23,8 @@ $component: rgba(255, 255, 255, 0.7);
 }
 
 .welcome-ui {
-  margin-top: .5em;
+  margin-top: .7em;
+  font-family: 'Cardo', serif;
 }
 
 @media only screen and (max-width: 900px) {
@@ -60,7 +62,7 @@ $component: rgba(255, 255, 255, 0.7);
 
 @media only screen and (max-width: 400px) {
   .weathrly {
- 
+
     padding-top: 2em;
   }
 }
