@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import CurrentWeather from '../lib/CurrentWeather';
-import data from '../lib/mock.js';
-import { DataCleaner } from '../lib/DataCleaner';
+import data from '../lib/mockData/mock.js';
+import { dataCleaner } from '../lib/dataCleaner';
 
 describe( 'CurrentWeather', () => {
   let wrapper;
@@ -12,7 +12,7 @@ describe( 'CurrentWeather', () => {
   }
 
   beforeEach(() => {
-    wrapper = mount(<CurrentWeather weather={DataCleaner(data)}/>);
+    wrapper = mount(<CurrentWeather weather={dataCleaner(data)}/>);
   });
 
   it('should exist', () => {

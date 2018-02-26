@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Welcome from '../lib/Welcome';
-import data from '../lib/mock.js';
-import { DataCleaner } from '../lib/DataCleaner';
+import data from '../lib/mockData/mock.js';
+import { dataCleaner } from '../lib/dataCleaner';
 
 describe( 'Welcome', () => {
   let wrapper;
@@ -12,7 +12,7 @@ describe( 'Welcome', () => {
   }
 
   beforeEach(() => {
-    wrapper = mount(<Welcome weather={DataCleaner(data)}/>);
+    wrapper = mount(<Welcome weather={dataCleaner(data)}/>);
   });
 
   it('should exist', () => {
@@ -24,6 +24,4 @@ describe( 'Welcome', () => {
     expect(wrapper.find('Search').length).toEqual(1);
     expect(wrapper.find('h2').length).toEqual(1);
   })
-
-
 })
