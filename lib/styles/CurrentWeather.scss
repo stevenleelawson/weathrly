@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
-@import url('https://fonts.googleapis.com/css?family=Cardo:700|Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Cardo:400|Montserrat:700');
 
 
 .current-weather {
@@ -40,6 +40,8 @@
 .summary {
   font-size: 1.5em;
   margin-bottom: .4em;
+  font-family: 'Cardo', serif;
+  font-weight: lighter;
 }
 
 @media only screen and (max-width: 500px) {

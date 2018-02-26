@@ -74,16 +74,13 @@ describe( 'App', () => {
     expect(typeof wrapper.instance().setLocation).toEqual('function');
     expect(typeof wrapper.instance().componentDidMount).toEqual('function')
   })
-
-  
+  it('should set location to local storage', () => {
+    setTimeout(() => {
+      wrapper.instance().setToLocal();
+      wrapper = shallow(<App />);
+      wrapper.setState({location: 'taco'})
+      let itemsInStorage = localStorage.getItem('location').length;
+      expect(itemsInStorage).toEqual(1)
+    },500)
+  })
 })
-
-
-
-
-
-
-
-
-
-
