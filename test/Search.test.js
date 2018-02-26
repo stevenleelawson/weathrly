@@ -19,5 +19,15 @@ describe( 'Search', () => {
     expect(wrapper).toBeDefined();
   });
 
+  it('should have a state with the property of weatherResults set to null', () => {
+    expect(wrapper.state().input).toEqual('');
+  })
 
+  it('should have a state with the property of location set to an empty string', () => {
+    expect(wrapper.state().location).toEqual('')
+  })
+
+  it('should have a state with the property of suggestions set to an empty array', () => {
+    expect(wrapper.state().suggestions.length).toEqual(0)
+  })
 })

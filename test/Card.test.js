@@ -24,4 +24,16 @@ describe( 'Card', () => {
     expect(wrapper.find('img').length).toEqual(1);
     expect(wrapper.find('p').length).toEqual(2);
   })
+
+  it('should display the day of the week', () => {
+    expect(wrapper.props().weather.tenDayArray[0].date.weekday).toEqual('Wednesday')
+  })
+
+  it('should display the high temp for the day', () => {
+    expect(wrapper.props().weather.tenDayArray[0].high.fahrenheit).toEqual('51')
+  })
+
+  it('should display the low temp for the day', () => {
+    expect(wrapper.props().weather.tenDayArray[0].low.fahrenheit).toEqual('32')
+  })
 })
