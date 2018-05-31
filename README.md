@@ -1,4 +1,5 @@
 
+![wire](lib/assets/weathrly.png?raw=true "weathrly")
 ![wire](lib/assets/weathrly_all.jpg?raw=true "weathrly")
 ![pic1](http://lib/assets/sunny2.jpg)
 ![wire](lib/assets/weathrly_welcome.jpg?raw=true "weathrly")
